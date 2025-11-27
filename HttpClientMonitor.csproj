@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 		<PackageId>HTTPClientMonitor</PackageId>
-		<Version>1.0.1</Version>
+		<Version>1.0.4</Version>
 		<Authors>lars</Authors>
 		<Company>None</Company>
 		<Description>A lightweight HTTP client monitoring library.</Description>
@@ -13,6 +13,7 @@
 		<RepositoryUrl>https://github.com/larswise/HTTPClientMonitor</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
+		<None Include="README.md"
+        Pack="true"
+        PackagePath="\" />
     <None Include="diag-ui\httpmon\dist\**\*" Pack="true" PackagePath="contentFiles\any\any\diag-ui\httpmon\dist\%(RecursiveDir)%(Filename)%(Extension)" />
     <None Include="build\HTTPClientMonitor.targets" Pack="true" PackagePath="build\HTTPClientMonitor.targets" />
   </ItemGroup>

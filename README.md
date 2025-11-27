@@ -17,3 +17,5 @@ How to use:
     var app = builder.BuildWithHttpClientMonitor();
 ```
 3. Open your browser and navigate to `http://localhost:yourport/diag` to view the recorded requests.
+
+4. Never use in production! This is for development and debugging purposes only.
