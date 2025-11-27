@@ -4,10 +4,24 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+		<PackageId>HTTPClientMonitor</PackageId>
+		<Version>1.0.1</Version>
+		<Authors>lars</Authors>
+		<Company>None</Company>
+		<Description>A lightweight HTTP client monitoring library.</Description>
+		<PackageTags>http monitor client</PackageTags>
+		<RepositoryUrl>https://github.com/larswise/HTTPClientMonitor</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="diag-ui\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="diag-ui\httpmon\dist\**\*" Pack="true" PackagePath="contentFiles\any\any\diag-ui\httpmon\dist\%(RecursiveDir)%(Filename)%(Extension)" />
+    <None Include="build\HTTPClientMonitor.targets" Pack="true" PackagePath="build\HTTPClientMonitor.targets" />
   </ItemGroup>
 
   <ItemGroup>

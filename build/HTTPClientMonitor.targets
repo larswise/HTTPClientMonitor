@@ -1,0 +1,11 @@
+<Project>
+  
+  <ItemGroup>
+    <ContentWithTargetPath Include="$(MSBuildThisFileDirectory)..\..\contentFiles\any\any\diag-ui\httpmon\dist\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <TargetPath>diag-ui\httpmon\dist\%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+    </ContentWithTargetPath>
+  </ItemGroup>
+  
+</Project>
