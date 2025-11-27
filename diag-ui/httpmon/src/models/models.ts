@@ -17,6 +17,6 @@ export interface HttpResponseData {
     ContentLength: string;
     Version: string;
     RespondedAt: string;
-    Headers: { [key: string]: string }
+    ResponseHeaders: { [key: string]: string }
     CorrelationId: string;
 }
